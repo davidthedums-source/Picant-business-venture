@@ -1,0 +1,6 @@
+{
+  "name": "Picant Business Venture",
+  "description": "Professional computer repair and technology service company located at 5 Elmes Street, off Edmund Crescent, Yaba, Lagos, Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
