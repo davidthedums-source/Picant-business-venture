@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
+import { PortfolioSection } from './components/PortfolioSection';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { AboutSection } from './components/AboutSection';
 import { RepairProcess } from './components/RepairProcess';
@@ -69,7 +70,10 @@ export default function App() {
         {/* 2. Services Section */}
         <ServicesSection onOpenBooking={handleOpenBooking} />
 
-        {/* 3. Why Choose Us Section */}
+        {/* 3. Portfolio & Completed Repairs Showcase */}
+        <PortfolioSection onOpenBooking={handleOpenBooking} />
+
+        {/* 4. Why Choose Us Section */}
         <WhyChooseUs />
 
         {/* 4. About Company Section */}

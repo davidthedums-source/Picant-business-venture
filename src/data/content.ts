@@ -1,4 +1,4 @@
-import { ServiceItem, WhyChooseItem, ProcessStep, ReviewItem, FaqItem } from '../types';
+import { ServiceItem, WhyChooseItem, ProcessStep, ReviewItem, FaqItem, PortfolioItem } from '../types';
 
 export const BUSINESS_INFO = {
   name: 'Picant Business Venture',
@@ -14,6 +14,13 @@ export const BUSINESS_INFO = {
   operatingHours: 'Monday – Saturday: 8:30 AM – 6:30 PM (Sunday: Closed / Urgent Enquiries)',
   locationArea: 'Yaba, Lagos, Nigeria'
 };
+
+export const KEY_METRICS = [
+  { value: '1,400+', label: 'Devices Serviced', sub: 'Across Lagos Mainland' },
+  { value: '24–48h', label: 'Average Turnaround', sub: 'For standard repairs' },
+  { value: '99.2%', label: 'Diagnostic Accuracy', sub: 'Root-cause isolation' },
+  { value: '5.0 ★', label: 'Customer Trust', sub: 'Verified client reviews' },
+];
 
 export const SERVICES_LIST: ServiceItem[] = [
   {
@@ -178,3 +185,85 @@ export const FAQ_LIST: FaqItem[] = [
     category: 'Contact'
   }
 ];
+
+export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+  {
+    id: 'macbook-liquid-damage',
+    title: 'Apple MacBook Pro Liquid Damage & Logic Board Recovery',
+    category: 'hardware',
+    categoryLabel: 'Hardware & Micro-Soldering',
+    device: 'Apple MacBook Pro 14" (M-Series)',
+    symptom: 'Complete power failure following coffee spill, short-circuit on 5V rail.',
+    resolution: 'Ultrasonic board decontamination, capacitor micro-soldering, and backlight fuse restoration.',
+    turnaround: '24 Hours',
+    badgeColor: 'badge-purple',
+    stats: '100% Data Preserved',
+    iconName: 'Laptop'
+  },
+  {
+    id: 'nvme-speed-overhaul',
+    title: 'High-Speed Gen4 NVMe SSD & 32GB RAM Performance Overhaul',
+    category: 'upgrades',
+    categoryLabel: 'Speed & Storage Upgrades',
+    device: 'Dell XPS 15 Workstation Laptop',
+    symptom: 'Extremely sluggish boot times (over 3 mins) and thermal throttling under heavy multi-tasking.',
+    resolution: 'Cloned system drive to 1TB NVMe Gen4 SSD, expanded DDR4 RAM to 32GB, thermal repaste with Arctic MX-6.',
+    turnaround: 'Same Day (4 Hours)',
+    badgeColor: 'badge-cyan',
+    stats: '12x Boot Acceleration',
+    iconName: 'Zap'
+  },
+  {
+    id: 'custom-rig-thermal-rework',
+    title: 'Architectural Rendering Rig GPU Diagnostics & Thermal Rework',
+    category: 'hardware',
+    categoryLabel: 'Workstation & Hardware',
+    device: 'Custom Intel Core i9 / RTX 4080 Tower',
+    symptom: 'Random shutdowns during AutoCAD & Blender 3D rendering with CPU temps peaking at 98°C.',
+    resolution: 'AIO liquid cooler flush, high-conductivity thermal pads replacement, GPU BIOS flash, and airflow optimization.',
+    turnaround: '24 Hours',
+    badgeColor: 'badge-rose',
+    stats: 'Temp drop from 98°C to 68°C',
+    iconName: 'Cpu'
+  },
+  {
+    id: 'enterprise-win11-migration',
+    title: 'Corporate Multi-Seat Windows 11 Pro Migration & Security Hardening',
+    category: 'software',
+    categoryLabel: 'Software & Data Systems',
+    device: '8x HP ProDesk Desktop Fleet (Yaba Tech Firm)',
+    symptom: 'Outdated, corrupted Windows installations vulnerable to ransomware and recurrent network dropouts.',
+    resolution: 'Clean Enterprise Win11 deployment, encrypted local backup protocol, printer server sharing, and malware shield.',
+    turnaround: '48 Hours',
+    badgeColor: 'badge-emerald',
+    stats: 'Zero Workflow Downtime',
+    iconName: 'ShieldCheck'
+  },
+  {
+    id: 'hp-envy-hinge-screen',
+    title: 'HP Envy 360 Broken Hinge Reconstruction & 4K Display Replacement',
+    category: 'hardware',
+    categoryLabel: 'Hardware & Chassis Repair',
+    device: 'HP Envy x360 Convertible',
+    symptom: 'Snapping hinge tore through chassis, cracking the touchscreen digitizer and pinching the display cable.',
+    resolution: 'Precision metal hinge bracket anchoring, replacement OEM digitizer panel, and internal cable re-routing.',
+    turnaround: '24 Hours',
+    badgeColor: 'badge-amber',
+    stats: 'Factory Rigidity Restored',
+    iconName: 'Wrench'
+  },
+  {
+    id: 'ransomware-recovery-backup',
+    title: 'Accidental Partition Loss & Critical Accounting File Recovery',
+    category: 'software',
+    categoryLabel: 'Data Recovery & Software',
+    device: 'Lenovo ThinkPad T490',
+    symptom: 'Formatted drive partition during failed DIY OS upgrade containing 4 years of client financial books.',
+    resolution: 'Deep bit-level sector scan, MBR reconstruction, full forensic file extraction, and dual-backup drive setup.',
+    turnaround: '18 Hours',
+    badgeColor: 'badge-blue',
+    stats: '99.8% Files Salvaged',
+    iconName: 'HardDrive'
+  }
+];
+

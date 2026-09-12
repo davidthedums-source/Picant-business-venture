@@ -38,6 +38,20 @@ export interface FaqItem {
   category?: string;
 }
 
+export interface PortfolioItem {
+  id: string;
+  title: string;
+  category: 'all' | 'hardware' | 'upgrades' | 'software';
+  categoryLabel: string;
+  device: string;
+  symptom: string;
+  resolution: string;
+  turnaround: string;
+  badgeColor: string;
+  stats: string;
+  iconName: string;
+}
+
 export interface RepairBookingData {
   fullName: string;
   phoneNumber: string;
